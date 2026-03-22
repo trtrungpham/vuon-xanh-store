@@ -145,11 +145,11 @@ const Products = () => {
             {isLoading ? (
               <div className="text-center py-20 flex flex-col items-center">
                 <div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
-                <p className="text-muted-foreground mt-4">Đang tải sản phẩm từ Supabase...</p>
+                <p className="text-muted-foreground mt-4">Đang tải sản phẩm...</p>
               </div>
             ) : error ? (
               <div className="text-center py-20">
-                <p className="text-red-500 font-medium">Lỗi kết nối Supabase</p>
+                <p className="text-red-500 font-medium">Lỗi kết nối máy chủ</p>
                 <p className="text-muted-foreground mt-2 text-sm">{error instanceof Error ? error.message : "Vui lòng kiểm tra lại file .env và cấu hình URL/Key."}</p>
                 <Button variant="outline" className="mt-4" onClick={() => window.location.reload()}>Thử lại</Button>
               </div>
